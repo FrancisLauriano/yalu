@@ -11,10 +11,11 @@ class MenuAluno {
       while (true) {
         console.log('\n********** MENU DO ALUNO **********');
         console.log('1. Cadastrar Aluno');
-        console.log('2. Listar Alunos');
-        console.log('3. Buscar Aluno por Nome ou Email');
-        console.log('4. Atualizar Aluno');
-        console.log('5. Deletar Aluno');
+        console.log('2. Listar todos os Alunos');
+				console.log('3. Listar Alunos por Turma');
+        console.log('4. Buscar Aluno por Nome ou Email');
+        console.log('5. Atualizar Aluno');
+        console.log('6. Deletar Aluno');
         console.log('0. Voltar');
         console.log('*******************************************');
         const opcaoAluno = readline.questionInt('Escolha uma opção: ');
@@ -27,13 +28,16 @@ class MenuAluno {
             this.bancoDeAlunos.listarAlunos();
             break;
           case 3:
-            this.bancoDeAlunos.buscarAluno();
+            this.bancoDeAlunos.listarAlunosPorTurma();
             break;
           case 4:
-            this.bancoDeAlunos.atualizarAluno();
+						this.bancoDeAlunos.buscarAluno();
             break;
           case 5:
-            this.bancoDeAlunos.deletarAluno();
+						this.bancoDeAlunos.atualizarAluno();
+						break;
+					case 6:
+						this.bancoDeAlunos.deletarAluno();
             break;
           case 0:
             console.log('Voltando ao menu principal.');
