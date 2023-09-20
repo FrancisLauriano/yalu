@@ -29,10 +29,13 @@ class BancoDeAlunos {
 
   }
 
+<<<<<<< HEAD
 	listarAlunosPorTurma() {
 
 	}
 
+=======
+>>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
   atualizarAluno() {
 
   }
