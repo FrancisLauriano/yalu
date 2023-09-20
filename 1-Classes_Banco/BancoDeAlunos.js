@@ -30,12 +30,18 @@ class BancoDeAlunos {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e4468fb (19-09-2023)
 	listarAlunosPorTurma() {
 
 	}
 
+<<<<<<< HEAD
 =======
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
+=======
+>>>>>>> e4468fb (19-09-2023)
   atualizarAluno() {
 
   }
