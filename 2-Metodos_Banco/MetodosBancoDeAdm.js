@@ -73,7 +73,11 @@ import { BancoDeAdm } from '../1-Classes_Banco/BancoDeAdm.js';
       if (this.Adms.length > 0) {
         console.log('\nLista de ADMs:');
         this.Adms.forEach((adm, index) => {
+<<<<<<< HEAD
           console.log(`ID: ${index+1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+=======
+          console.log(`ID: ${index + 1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
         });
       } else {
         console.log('\nNenhum ADM encontrado.');
@@ -100,7 +104,11 @@ buscarAdmPorNomeOuEmail(buscaSubstring) {
     if (admsEncontrados.length > 0) {
       console.log('\nADM(s) encontrado(s):');
       admsEncontrados.forEach((adm, index) => {
+<<<<<<< HEAD
         console.log(`ID: ${index +1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+=======
+        console.log(`ID: ${index + 1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
       });
     } else {
       console.log(`\nNenhum ADM encontrado com o nome ou email fornecido. "${buscaSubstring}".`);
@@ -110,6 +118,7 @@ buscarAdmPorNomeOuEmail(buscaSubstring) {
   }
 }
 
+<<<<<<< HEAD
 // Método para atualizar ADM
 atualizarAdm() {
   console.log('\n** Atualizar ADM **');
@@ -145,6 +154,26 @@ atualizarAdm() {
       // Mostrar os dados atuais do ADM selecionado
       console.log('\nDados atuais do ADM:');
 			console.log(`ID: ${admParaAtualizar.id}`);
+=======
+  // Método para atualizar ADM
+  atualizarAdm() {
+    console.log('\n** Atualizar ADM **');
+    const nomeOuEmail = readline.question('Digite o nome ou email do ADM que deseja atualizar: ').toLowerCase();
+
+    try {
+      // Procurar o ADM com base no nome ou email fornecido
+      const admParaAtualizar = this.Adms.find(
+        (adm) => adm.nome === nomeOuEmail || adm.email === nomeOuEmail
+      );
+
+      if (!admParaAtualizar) {
+        console.log('\nADM não encontrado para atualização.');
+        return;
+      }
+
+      // Mostrar os dados atuais do ADM
+      console.log('Dados atuais do ADM:');
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
       console.log(`Nome: ${admParaAtualizar.nome}`);
       console.log(`Email: ${admParaAtualizar.email}`);
       console.log(`Senha: ${admParaAtualizar.senha}`);
@@ -154,9 +183,15 @@ atualizarAdm() {
       console.log('2. Email');
       console.log('3. Senha');
       console.log('0. Cancelar');
+<<<<<<< HEAD
       const escolha = readline.questionInt('Escolha uma opção: ');
 
       switch (escolha) {
+=======
+      const opcao = readline.questionInt('Escolha uma opção: ');
+
+      switch (opcao) {
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
         case 1:
           const novoNome = readline.question('Digite o novo nome (ou pressione Enter para manter o mesmo): ').toLowerCase();
           if (novoNome) {
@@ -181,6 +216,7 @@ atualizarAdm() {
           break;
         case 3:
           const novaSenha = readline.question('Digite a nova senha (de 4 a 6 dígitos numéricos ou pressione Enter para manter a mesma): ');
+<<<<<<< HEAD
           if (novaSenha === '') {
             break;
           }
@@ -191,6 +227,18 @@ atualizarAdm() {
             console.log('\nA senha não atende aos critérios de validação.');
           }
           break;
+=======
+					if (novaSenha === '') {
+							break;
+					}
+					if (this.validarSenha(novaSenha)) { //  validação de senha
+							admParaAtualizar.senha = novaSenha;
+							console.log('\nSenha atualizada com sucesso.');
+					} else {
+							console.log('\nA senha não atende aos critérios de validação.');
+					}
+					break;
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
         case 0:
           console.log('\nOperação de atualização cancelada.');
           break;
@@ -198,6 +246,7 @@ atualizarAdm() {
           console.log('\nOpção inválida.');
           break;
       }
+<<<<<<< HEAD
     } else {
       console.log('\nOpção inválida. Nenhum dado foi atualizado.');
     }
@@ -242,6 +291,31 @@ deletarAdm() {
       // Mostrar os dados do ADM a ser deletado
       console.log('\nDados do ADM a ser deletado:');
       console.log(`ID: ${admParaDeletar.id}`);
+=======
+    } catch (error) {
+      console.error('\nErro ao atualizar ADM:', error);
+    }
+  }
+
+  // Método para deletar ADM
+  deletarAdm() {
+    console.log('\n** Deletar ADM **');
+    const nomeOuEmail = readline.question('Digite o nome ou email do ADM que deseja deletar: ').toLowerCase();
+
+    try {
+      // Procurar o ADM com base no nome ou email
+      const admParaDeletar = this.Adms.find(
+        (adm) => adm.nome === nomeOuEmail || adm.email === nomeOuEmail
+      );
+
+      if (!admParaDeletar) {
+        console.log('\nADM não encontrado para exclusão.');
+        return;
+      }
+
+      // Mostrar os dados do ADM antes da exclusão
+      console.log('Dados do ADM a ser deletado:');
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
       console.log(`Nome: ${admParaDeletar.nome}`);
       console.log(`Email: ${admParaDeletar.email}`);
       console.log(`Senha: ${admParaDeletar.senha}`);
@@ -264,6 +338,7 @@ deletarAdm() {
       } else {
         console.log('\nOpção inválida. Nenhum dado foi removido.');
       }
+<<<<<<< HEAD
     } else {
       console.log('\nOpção inválida. Nenhum dado foi removido.');
     }
@@ -275,4 +350,12 @@ deletarAdm() {
 
 }
 
+=======
+    } catch (error) {
+      console.error('\nErro ao deletar ADM:', error);
+    }
+  }
+}
+
+>>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
 export {MetodosBancoDeAdm};
