@@ -29,6 +29,10 @@ class BancoDeAlunos {
 
   }
 
+	listarAlunosPorTurma() {
+
+	}
+
   atualizarAluno() {
 
   }
