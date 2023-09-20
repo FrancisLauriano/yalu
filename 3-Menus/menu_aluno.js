@@ -14,13 +14,17 @@ class MenuAluno {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e4468fb (19-09-2023)
+=======
+>>>>>>> 98221a0 (19-09-2023)
         console.log('2. Listar todos os Alunos');
 				console.log('3. Listar Alunos por Turma');
         console.log('4. Buscar Aluno por Nome ou Email');
         console.log('5. Atualizar Aluno');
         console.log('6. Deletar Aluno');
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -35,6 +39,8 @@ class MenuAluno {
 >>>>>>> e4468fb (19-09-2023)
 =======
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
+=======
+>>>>>>> 98221a0 (19-09-2023)
         console.log('0. Voltar');
         console.log('*******************************************');
         const opcaoAluno = readline.questionInt('Escolha uma opção: ');
@@ -50,6 +56,7 @@ class MenuAluno {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.bancoDeAlunos.listarAlunosPorTurma();
             break;
           case 4:
@@ -81,13 +88,23 @@ class MenuAluno {
 >>>>>>> e4468fb (19-09-2023)
 =======
             this.bancoDeAlunos.buscarAluno();
+=======
+            this.bancoDeAlunos.listarAlunosPorTurma();
+>>>>>>> 98221a0 (19-09-2023)
             break;
           case 4:
-            this.bancoDeAlunos.atualizarAluno();
+						this.bancoDeAlunos.buscarAluno();
             break;
           case 5:
+<<<<<<< HEAD
             this.bancoDeAlunos.deletarAluno();
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
+=======
+						this.bancoDeAlunos.atualizarAluno();
+						break;
+					case 6:
+						this.bancoDeAlunos.deletarAluno();
+>>>>>>> 98221a0 (19-09-2023)
             break;
           case 0:
             console.log('Voltando ao menu principal.');
