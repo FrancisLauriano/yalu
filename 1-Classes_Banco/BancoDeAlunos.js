@@ -35,12 +35,20 @@ class BancoDeAlunos {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> e4468fb (19-09-2023)
+=======
+>>>>>>> bce8997368b82c9a94fbb71bd0594c0e9e6c50f7
 =======
 >>>>>>> 98221a0 (19-09-2023)
 =======
 >>>>>>> d031b04 (19-09-2023)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
+>>>>>>> bce8997368b82c9a94fbb71bd0594c0e9e6c50f7
 	listarAlunosPorTurma() {
 
 	}
@@ -48,10 +56,13 @@ class BancoDeAlunos {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> e4468fb (19-09-2023)
+=======
+>>>>>>> bce8997368b82c9a94fbb71bd0594c0e9e6c50f7
 =======
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
 =======
@@ -60,6 +71,11 @@ class BancoDeAlunos {
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
+>>>>>>> bce8997368b82c9a94fbb71bd0594c0e9e6c50f7
   atualizarAluno() {
 
   }
