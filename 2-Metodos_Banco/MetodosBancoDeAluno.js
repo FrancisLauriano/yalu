@@ -94,16 +94,22 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 98221a0 (19-09-2023)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
 	listarAlunosPorTurma() {
     console.log('\n** Listar Alunos por Turma **');
     const turmaDesejada = readline.question('Digite a turma que deseja listar (1 - Sábado iniciante, 2 - Sábado avançado, 3 - Domingo iniciante, 4 - Domingo avançado): ');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
     try {
       let alunosPorTurma = [];
@@ -153,6 +159,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
         // ocorrências de substring em ordem decrescente.
         return nomeOcorrencias + emailOcorrencias + matriculaOcorrencias > 0;
       });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
@@ -226,6 +233,8 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
       if (alunosEncontrados.length > 0) {
         console.log('\nAluno(s) encontrado(s):');
@@ -237,10 +246,14 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         console.log(`\nNenhum Aluno encontrado com o nome, email ou matrícula fornecido. "${buscaSubstring}".`);
       }
     } catch (error) {
       console.error('\nErro ao buscar Alunos por nome, email ou matrícula:', error);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
@@ -264,6 +277,8 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
     } catch (error) {
       console.error('\nErro ao buscar Alunos por nome, email ou matrícula:', error);
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
     }
   }
 
@@ -273,6 +288,9 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
     const buscaSubstring = readline.question('Digite o nome, email ou matrícula do Aluno que deseja atualizar: ').toLowerCase();
 
     try {
@@ -300,6 +318,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       }
 
       const alunoParaAtualizar = alunosEncontrados.find((aluno) => aluno.matricula === opcao);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
@@ -350,12 +369,15 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
       if (!alunoParaAtualizar) {
         console.log('\nAluno não encontrado para atualização.');
         return;
       }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -379,6 +401,11 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       console.log('\nDados atuais do Aluno:');
       console.log(`Matrícula: ${alunoParaAtualizar.matricula}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+      // Mostrar os dados atuais do Aluno selecionado
+      console.log('\nDados atuais do Aluno:');
+      console.log(`Matrícula: ${alunoParaAtualizar.matricula}`);
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
       console.log(`Nome: ${alunoParaAtualizar.nome}`);
       console.log(`Email: ${alunoParaAtualizar.email}`);
       console.log(`Telefone: ${alunoParaAtualizar.telefone}`);
@@ -394,6 +421,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       const escolha = readline.questionInt('Escolha uma opção: ');
 
       switch (escolha) {
@@ -417,6 +445,11 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 
       switch (escolha) {
 >>>>>>> d031b04 (19-09-2023)
+=======
+      const escolha = readline.questionInt('Escolha uma opção: ');
+
+      switch (escolha) {
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         case 1:
           const novoNome = readline.question('Digite o novo nome (ou pressione Enter para manter o mesmo): ').toLowerCase();
           if (novoNome) {
@@ -452,6 +485,9 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         case 4:
           const novaTurmaInput = readline.questionInt('Digite a nova turma (ou pressione Enter para manter a mesma)\n(1)- Sábado iniciante (2)- Sábado avançado, (3)- Domingo iniciante, (4)- Domingo avançado\nEscolha uma opção:  ');
 
@@ -484,6 +520,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
             console.log('\nTurma não atualizada.');
           }
           break;
+<<<<<<< HEAD
 =======
 				case 4:
 					const novaTurmaInput = readline.questionInt('Digite a nova turma (ou pressione Enter para manter a mesma)\n(1)- Sábado iniciante (2)- Sábado avançado, (3)- Domingo iniciante, (4)- Domingo avançado\nEscolha uma opção:  ');
@@ -570,6 +607,8 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
           }
           break;
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         case 0:
           console.log('\nOperação de atualização cancelada.');
           break;
@@ -588,6 +627,9 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
     const buscaSubstring = readline.question('Digite o nome, email ou matrícula do Aluno que deseja deletar: ').toLowerCase();
 
     try {
@@ -615,6 +657,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       }
 
       const alunoParaDeletar = alunosEncontrados.find((aluno) => aluno.matricula === opcao);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
@@ -665,12 +708,15 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
       if (!alunoParaDeletar) {
         console.log('\nAluno não encontrado para exclusão.');
         return;
       }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -694,6 +740,11 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       console.log('\nDados do Aluno a ser deletado:');
       console.log(`Matrícula: ${alunoParaDeletar.matricula}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+      // Mostrar os dados do Aluno a ser deletado
+      console.log('\nDados do Aluno a ser deletado:');
+      console.log(`Matrícula: ${alunoParaDeletar.matricula}`);
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
       console.log(`Nome: ${alunoParaDeletar.nome}`);
       console.log(`Email: ${alunoParaDeletar.email}`);
       console.log(`Telefone: ${alunoParaDeletar.telefone}`);
@@ -727,6 +778,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> c11d00f (PRINCIPAL-PROGRAMA)
@@ -738,6 +790,9 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 =======
 
 >>>>>>> d031b04 (19-09-2023)
+=======
+
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
   buscarAlunoPorMatricula(matricula) {
     return this.alunos.find(aluno => aluno.matricula === matricula);
   }

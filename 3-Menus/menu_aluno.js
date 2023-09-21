@@ -15,15 +15,19 @@ class MenuAluno {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 98221a0 (19-09-2023)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         console.log('2. Listar todos os Alunos');
 				console.log('3. Listar Alunos por Turma');
         console.log('4. Buscar Aluno por Nome ou Email');
         console.log('5. Atualizar Aluno');
         console.log('6. Deletar Aluno');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -41,6 +45,8 @@ class MenuAluno {
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         console.log('0. Voltar');
         console.log('*******************************************');
         const opcaoAluno = readline.questionInt('Escolha uma opção: ');
@@ -57,6 +63,9 @@ class MenuAluno {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
             this.bancoDeAlunos.listarAlunosPorTurma();
             break;
           case 4:
@@ -67,6 +76,7 @@ class MenuAluno {
 						break;
 					case 6:
 						this.bancoDeAlunos.deletarAluno();
+<<<<<<< HEAD
 =======
             this.bancoDeAlunos.buscarAluno();
 =======
@@ -105,6 +115,8 @@ class MenuAluno {
 					case 6:
 						this.bancoDeAlunos.deletarAluno();
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
             break;
           case 0:
             console.log('Voltando ao menu principal.');

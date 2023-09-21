@@ -77,6 +77,7 @@ import { BancoDeAdm } from '../1-Classes_Banco/BancoDeAdm.js';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           console.log(`ID: ${index+1}, Nome: ${adm.nome}, Email: ${adm.email}`);
 =======
           console.log(`ID: ${index + 1}, Nome: ${adm.nome}, Email: ${adm.email}`);
@@ -90,6 +91,9 @@ import { BancoDeAdm } from '../1-Classes_Banco/BancoDeAdm.js';
 =======
           console.log(`ID: ${index+1}, Nome: ${adm.nome}, Email: ${adm.email}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+          console.log(`ID: ${index+1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         });
       } else {
         console.log('\nNenhum ADM encontrado.');
@@ -120,6 +124,7 @@ buscarAdmPorNomeOuEmail(buscaSubstring) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         console.log(`ID: ${index +1}, Nome: ${adm.nome}, Email: ${adm.email}`);
 =======
         console.log(`ID: ${index + 1}, Nome: ${adm.nome}, Email: ${adm.email}`);
@@ -133,6 +138,9 @@ buscarAdmPorNomeOuEmail(buscaSubstring) {
 =======
         console.log(`ID: ${index +1}, Nome: ${adm.nome}, Email: ${adm.email}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+        console.log(`ID: ${index +1}, Nome: ${adm.nome}, Email: ${adm.email}`);
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
       });
     } else {
       console.log(`\nNenhum ADM encontrado com o nome ou email fornecido. "${buscaSubstring}".`);
@@ -146,16 +154,22 @@ buscarAdmPorNomeOuEmail(buscaSubstring) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 98221a0 (19-09-2023)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 // Método para atualizar ADM
 atualizarAdm() {
   console.log('\n** Atualizar ADM **');
   const buscaSubstring = readline.question('Digite o nome ou email do ADM que deseja atualizar: ').toLowerCase();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 
   try {
     // Filtrar ADMs com base na substring fornecida
@@ -187,6 +201,7 @@ atualizarAdm() {
       // Mostrar os dados atuais do ADM selecionado
       console.log('\nDados atuais do ADM:');
 			console.log(`ID: ${admParaAtualizar.id}`);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
@@ -274,6 +289,8 @@ atualizarAdm() {
       console.log('\nDados atuais do ADM:');
 			console.log(`ID: ${admParaAtualizar.id}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
       console.log(`Nome: ${admParaAtualizar.nome}`);
       console.log(`Email: ${admParaAtualizar.email}`);
       console.log(`Senha: ${admParaAtualizar.senha}`);
@@ -283,6 +300,7 @@ atualizarAdm() {
       console.log('2. Email');
       console.log('3. Senha');
       console.log('0. Cancelar');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -310,6 +328,11 @@ atualizarAdm() {
 
       switch (escolha) {
 >>>>>>> d031b04 (19-09-2023)
+=======
+      const escolha = readline.questionInt('Escolha uma opção: ');
+
+      switch (escolha) {
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         case 1:
           const novoNome = readline.question('Digite o novo nome (ou pressione Enter para manter o mesmo): ').toLowerCase();
           if (novoNome) {
@@ -338,10 +361,13 @@ atualizarAdm() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 98221a0 (19-09-2023)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
           if (novaSenha === '') {
             break;
           }
@@ -352,6 +378,7 @@ atualizarAdm() {
             console.log('\nA senha não atende aos critérios de validação.');
           }
           break;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -375,6 +402,8 @@ atualizarAdm() {
 >>>>>>> b330d95 (PRINCIPAL-PROGRAMA)
 =======
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
         case 0:
           console.log('\nOperação de atualização cancelada.');
           break;
@@ -386,6 +415,9 @@ atualizarAdm() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
     } else {
       console.log('\nOpção inválida. Nenhum dado foi atualizado.');
     }
@@ -430,6 +462,7 @@ deletarAdm() {
       // Mostrar os dados do ADM a ser deletado
       console.log('\nDados do ADM a ser deletado:');
       console.log(`ID: ${admParaDeletar.id}`);
+<<<<<<< HEAD
 =======
     } catch (error) {
       console.error('\nErro ao atualizar ADM:', error);
@@ -540,6 +573,8 @@ deletarAdm() {
       console.log('\nDados do ADM a ser deletado:');
       console.log(`ID: ${admParaDeletar.id}`);
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
       console.log(`Nome: ${admParaDeletar.nome}`);
       console.log(`Email: ${admParaDeletar.email}`);
       console.log(`Senha: ${admParaDeletar.senha}`);
@@ -566,6 +601,9 @@ deletarAdm() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
     } else {
       console.log('\nOpção inválida. Nenhum dado foi removido.');
     }
@@ -577,6 +615,7 @@ deletarAdm() {
 
 }
 
+<<<<<<< HEAD
 =======
     } catch (error) {
       console.error('\nErro ao deletar ADM:', error);
@@ -617,4 +656,6 @@ deletarAdm() {
 }
 
 >>>>>>> d031b04 (19-09-2023)
+=======
+>>>>>>> d8bec22bde952bcdfa3aec5de77760a740d48893
 export {MetodosBancoDeAdm};
