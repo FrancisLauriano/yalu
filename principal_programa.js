@@ -85,6 +85,10 @@ function menuPrincipal() {
 function autenticarAdmin() {
   while (true) {
     console.log('\n** Autenticação do Administrador **');
+    console.log('\nLogin para teste::')
+    console.log('---email: teste@teste.com')
+    console.log('---senha: 4321\n')
+
     const emailUsuario = readline.question('Digite o email (ou aperte enter para desistir): ').toLowerCase();
     if (emailUsuario.trim().length === 0) {
       console.log('... voltando para a tela inicial');
@@ -110,6 +114,7 @@ function inicializandoAdministradores() {
   menuAdm.bancoDeAdm.Adms.push({ nome: 'francis', email: 'francis@teste.com', senha: '1234'});
   menuAdm.bancoDeAdm.Adms.push({ nome: 'rebeca', email: 'rebeca@teste.com', senha: '1234'});
   menuAdm.bancoDeAdm.Adms.push({ nome: 'martha', email: 'martha@teste.com', senha: '1234'});
+  menuAdm.bancoDeAdm.Adms.push({ nome: 'teste', email: 'teste@teste.com', senha: '4321'});
 }
 
 function inicializandoAlunos() {
