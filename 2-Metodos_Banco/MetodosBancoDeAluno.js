@@ -135,12 +135,14 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
 
     try {
       const alunosEncontrados = this.alunos.filter((aluno) => {
+				if (!isNaN(buscaSubstring)) {
+					return aluno.matricula === parseInt(buscaSubstring);
+				} else {
         const nomeOcorrencias = (aluno.nome.match(new RegExp(buscaSubstring, 'gi')) || []).length;
         const emailOcorrencias = (aluno.email.match(new RegExp(buscaSubstring, 'gi')) || []).length;
-        const matriculaOcorrencias = (aluno.matricula.toString().match(new RegExp(buscaSubstring, 'gi')) || []).length;
-
-        // ocorrências de substring em ordem decrescente.
-        return nomeOcorrencias + emailOcorrencias + matriculaOcorrencias > 0;
+				 // ocorrências de substring em ordem decrescente.
+				 return nomeOcorrencias + emailOcorrencias > 0;
+				}
       });
 
       if (alunosEncontrados.length > 0) {
@@ -154,7 +156,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
     } catch (error) {
       console.error('\nErro ao buscar Alunos por nome, email ou matrícula:', error);
     }
-  }  
+  }
 
   atualizarAluno() {
     console.log('\n** Atualizar Aluno **');
@@ -163,7 +165,11 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
     try {
       // Filtrar Alunos com base na substring fornecida
       const alunosEncontrados = this.alunos.filter((aluno) => {
-        return aluno.nome.includes(buscaSubstring) || aluno.email.includes(buscaSubstring) || aluno.matricula.toString().includes(buscaSubstring);
+				if(!isNaN(buscaSubstring)){ // Verifica se a entrada é um número (matricula)
+					 return aluno.matricula === parseInt(buscaSubstring);
+				} else{
+					return aluno.nome.includes(buscaSubstring) || aluno.email.includes(buscaSubstring)
+				}
       });
 
       if (alunosEncontrados.length === 0) {
@@ -288,10 +294,14 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
     const buscaSubstring = readline.question('Digite o nome, email ou matrícula do Aluno que deseja deletar: ').toLowerCase();
 
     try {
-      // Filtrar Alunos com base na substring fornecida
-      const alunosEncontrados = this.alunos.filter((aluno) => {
-        return aluno.nome.includes(buscaSubstring) || aluno.email.includes(buscaSubstring) || aluno.matricula.toString().includes(buscaSubstring);
-      });
+			// Filtrar Alunos com base na substring fornecida
+			const alunosEncontrados = this.alunos.filter((aluno) => {
+				if(!isNaN(buscaSubstring)){ // Verifica se a entrada é um número (matricula)
+					 return aluno.matricula === parseInt(buscaSubstring);
+				} else{
+					return aluno.nome.includes(buscaSubstring) || aluno.email.includes(buscaSubstring)
+				}
+			});
 
       if (alunosEncontrados.length === 0) {
         console.log(`\nNenhum Aluno encontrado com a busca: "${buscaSubstring}".`);
@@ -348,7 +358,7 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       console.error('\nErro ao deletar Aluno:', error);
     }
   }
-}  
+}
 
 export {MetodosBancoDeAlunos};
 

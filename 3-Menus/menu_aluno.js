@@ -13,7 +13,7 @@ class MenuAluno {
         console.log('1. Cadastrar Aluno');
         console.log('2. Listar todos os Alunos');
 				console.log('3. Listar Alunos por Turma');
-        console.log('4. Buscar Aluno por Nome ou Email');
+        console.log('4. Buscar Aluno por Nome, Email ou Matrícula');
         console.log('5. Atualizar Aluno');
         console.log('6. Deletar Aluno');
         console.log('0. Voltar');

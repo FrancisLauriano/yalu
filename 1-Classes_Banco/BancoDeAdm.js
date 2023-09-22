@@ -43,7 +43,7 @@ class BancoDeAdm {
   }
 
 // Método para buscar ADMs por Nome ou Email com base no número máximo de ocorrências de uma substring
-	buscarAdmPorNomeOuEmail(buscaSubstring) {
+	buscarAdm(buscaSubstring) {
 
 }
 

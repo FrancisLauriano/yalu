@@ -13,7 +13,7 @@ class MenuAdministrador {
       console.log('\n********** MENU ADMINISTRADOR **********');
       console.log('1. Criar ADM');
       console.log('2. Listar ADMs');
-      console.log('3. Buscar ADM por Nome ou Email');
+      console.log('3. Buscar ADM por Nome, Email ou ID');
       console.log('4. Atualizar ADM');
       console.log('5. Deletar ADM');
       console.log('0. Voltar');
@@ -28,7 +28,7 @@ class MenuAdministrador {
           this.bancoDeAdm.listarAdms();
           break;
         case 3:
-          this.bancoDeAdm.buscarAdmPorNomeOuEmail();
+          this.bancoDeAdm.buscarAdm();
           break;
         case 4:
           this.bancoDeAdm.atualizarAdm();

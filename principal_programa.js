@@ -110,11 +110,11 @@ function autenticarAdmin() {
 // colocando administradores dentro do banco de administradores
 function inicializandoAdministradores() {
 	menuAdm.bancoDeAdm.Adms = [];
-  menuAdm.bancoDeAdm.Adms.push({ nome: 'carlos', email: 'carlos@teste.com', senha: '1234'});
-  menuAdm.bancoDeAdm.Adms.push({ nome: 'francis', email: 'francis@teste.com', senha: '1234'});
-  menuAdm.bancoDeAdm.Adms.push({ nome: 'rebeca', email: 'rebeca@teste.com', senha: '1234'});
-  menuAdm.bancoDeAdm.Adms.push({ nome: 'martha', email: 'martha@teste.com', senha: '1234'});
-  menuAdm.bancoDeAdm.Adms.push({ nome: 'teste', email: 'teste@teste.com', senha: '4321'});
+  menuAdm.bancoDeAdm.Adms.push({id: 1, nome: 'carlos', email: 'carlos@teste.com', senha: '1234'});
+  menuAdm.bancoDeAdm.Adms.push({id: 2, nome: 'francis', email: 'francis@teste.com', senha: '1234'});
+  menuAdm.bancoDeAdm.Adms.push({id: 3, nome: 'rebeca', email: 'rebeca@teste.com', senha: '1234'});
+  menuAdm.bancoDeAdm.Adms.push({id: 4, nome: 'martha', email: 'martha@teste.com', senha: '1234'});
+  menuAdm.bancoDeAdm.Adms.push({id:5, nome: 'teste', email: 'teste@teste.com', senha: '4321'});
 }
 
 function inicializandoAlunos() {
