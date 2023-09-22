@@ -117,6 +117,7 @@ function inicializandoAdministradores() {
   menuAdm.bancoDeAdm.Adms.push({id:5, nome: 'teste', email: 'teste@teste.com', senha: '4321'});
 }
 
+// colocando alunos dentro do banco de alunos
 function inicializandoAlunos() {
 	menuAluno.bancoDeAlunos.alunos = [];
   menuAluno.bancoDeAlunos.alunos.push({matricula: 1, nome: 'Ana Maria Campos', email: 'ana@teste.com', telefone: '99932-4566', turma: 'Sábado avançado'});
