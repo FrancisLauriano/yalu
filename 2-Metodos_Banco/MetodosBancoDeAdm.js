@@ -26,7 +26,7 @@ import { BancoDeAdm } from '../1-Classes_Banco/BancoDeAdm.js';
 
 	// Método para verificar se o email já está cadastrado
   emailJaCadastrado(email) {
-    return this.Admss.some((adm) => adm.email === email);
+    return this.Adms.some((adm) => adm.email === email);
   }
 
 
