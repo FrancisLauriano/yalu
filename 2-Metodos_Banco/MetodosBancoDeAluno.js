@@ -358,6 +358,10 @@ class MetodosBancoDeAlunos extends BancoDeAlunos{
       console.error('\nErro ao deletar Aluno:', error);
     }
   }
+
+	buscarAlunoPorMatricula(matricula) {
+		return this.alunos.find(aluno => aluno.matricula === matricula);
+	}
 }
 
 export {MetodosBancoDeAlunos};
