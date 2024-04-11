@@ -17,3 +17,16 @@ Requisitos de projeto:
 5. O empréstimo só poderá ser realizado se o instrumento estiver disponível;
 6. O administrador poderá gerar uma lista de empréstimos realizados, e buscar empréstimos específicos.
   
+
+## Instação das depedências
+
+```bash
+$ npm install
+```
+
+## Executar app
+
+```bash
+# development
+$ npm run start
+```

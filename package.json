@@ -4,7 +4,7 @@
   "description": "Sistema desenvolvido na curso de formação acelerada de back end da Softex, na turma de terça e quinta do turno da manhã, ministrada pelo professor Waldeck.",
   "main": "principal_programa.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",
