@@ -1,4 +1,5 @@
 # yalu
+Sistema desenvolvido em JavaScript para cadastro de instrumentos e controle de empréstimo para os alunos de uma escola de maracatu
 
 Sistema desenvolvido na curso de formação acelerada de back end da Softex, na turma de terça e quinta do turno da manhã, ministrada pelo professor Waldeck.
 Trata-se de um sistema de cadastro de instrumentos de uma escola de maracatu, que também faz o controle de empréstimo para os alunos das diversas turmas.
